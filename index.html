@@ -207,11 +207,15 @@
       <footer>
          <div class="container-wide black">
             <div class="row">
-               <p class="white-text center">&copy; 2018 | iKanban</p>
+               <p class="white-text center">&copy; <blanqxYear>2018</blanqxYear> | iKanban</p>
             </div>
          </div>
       </footer>
       <script>
+         //automate year
+         var blanqxYear = document.querySelector('blanqxYear');
+         blanqxYear.innerText = new Date().getFullYear();
+
          jQuery(document).ready(function ($) {
              $('.parallax').parallax();
              $('.button-collapse').sideNav();
